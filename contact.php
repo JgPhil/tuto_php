@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $title = "Page de contact";
 require_once 'config.php';
 require 'functions/functions.php';
@@ -13,6 +15,9 @@ require 'header.php'; ?>
 
 <div class="row">
     <div class="col-md-8">
+    <h2>
+        <?= dump($_SESSION); ?>
+    </h2>
         <h2>Nous Contacter</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni inventore quidem nam esse blanditiis ullam, placeat veritatis eveniet laborum ut commodi facilis dicta! Explicabo repudiandae obcaecati voluptatum quae! Ipsa, quam?</p>
         <p>Maiores commodi praesentium obcaecati et ipsum consectetur optio est reprehenderit delectus voluptatem perspiciatis nihil excepturi, quidem a repudiandae deserunt amet at consequatur, deleniti voluptas numquam dolorum tempora non. Necessitatibus, suscipit?</p>

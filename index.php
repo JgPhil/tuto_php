@@ -1,7 +1,8 @@
 <?php
-
+session_start();
+$_SESSION['role'] = 'administrateur';
+require 'functions/functions.php';
 $title = "Page d'accueil";
-
 require 'header.php'; 
 
 ?>

@@ -1,8 +1,14 @@
 <div class="row">
-    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <?php require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . 'compteur.php';
+        $vues = nombre_vues();
+        $s = $vues > 1 ? 's' : ''; ?>
+        Il y a eu <?= nombre_vues() ?> visite<?= $s ?> sur le site
+        <?php ajouter_vue(); ?>
+    </div>
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
-    <h5>Navigation</h5>
+        <h5>Navigation</h5>
         <ul class="list-unstyled text-small">
             <?php
             $place = "bottom";
